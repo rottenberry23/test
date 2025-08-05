@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=960, initial-scale=1.0">
+    <title>2D Game Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home-screen">
+        <div class="home-content">
+            <h1>KnightBox</h1>
+            <button id="play-btn">&nbsp;&nbsp;&nbsp;<b>Play</b>&nbsp;&nbsp;&nbsp;</button><br><br>
+            <button id="controls-btn">Controls</button>
+        </div>
+        <div id="controls-modal" style="display:none;">
+            <div class="controls-content">
+                <h2>Controls</h2>
+                <ul>
+                    <li><b>Move Left:</b> Left Arrow</li>
+                    <li><b>Move Right:</b> Right Arrow</li>
+                    <li><b>Jump:</b> Up Arrow</li>
+                    <li><b>Attack 1:</b> Z</li>
+                    <li><b>Attack 2:</b> X</li>
+                    <li><b>Combo:</b> C</li>
+                    <li><b>Roll:</b> Space (&nbsp; 1.5 seconds cooldown &nbsp;)</li>
+                </ul>
+                <button id="close-controls-btn">Back</button>
+            </div>
+        </div>
+    </div>
+        <div id="gameover-screen" style="display:none;">
+        <div class="gameover-content">
+            <h1>The Knight Died</h1>
+            <div id="gameover-score"></div>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+    <canvas id="gameCanvas" width="960" height="540"></canvas>
+    <script src="./sprites/map/mapdata.js"></script>
+    <script src="./sprites/player/player.js"></script>
+    <script src="./sprites/zombie/zombie.js"></script>
+    <script src="./sprites/death/death.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'DigitalDisco';
+    src: url('./font/DigitalDisco-Thin.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DigitalDisco';
+    src: url('./font/DigitalDisco.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background: #181818;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DigitalDisco', monospace;
+}
+
+canvas {
+    font-family: 'DigitalDisco', monospace;
+    border: 2px solid #fff;
+    image-rendering: pixelated;
+    background: transparent;
+}
+
+#home-screen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 960px;
+    height: 540px;
+    background: rgba(24, 24, 24, 0.92);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    transition: z-index 0.5s;
+    pointer-events: auto;
+}
+
+#gameover-screen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 960px;
+    height: 540px;
+    background: rgba(24, 24, 24, 0.92);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    transition: z-index 0.5s;
+    pointer-events: auto;
+}
+#gameover-screen h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'DigitalDisco', monospace;
+}
+
+.home-content {
+    width: 100%;
+    text-align: center;
+}
+
+.gameover-content {
+    width: 100%;
+    text-align: center;
+}
+#home-screen h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'DigitalDisco', monospace;
+}
+
+#controls-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24,24,24,0.98);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DigitalDisco', monospace;
+}
+.controls-content {
+    background: #232323;
+    border-radius: 16px;
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+    text-align: center;
+    min-width: 340px;
+}
+#controls-modal h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+#controls-modal ul {
+    color: #fff;
+    font-size: 1.15rem;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+#controls-modal li {
+    margin-bottom: 0.7rem;
+}
+#close-controls-btn {
+    font-family: 'DigitalDisco', monospace;
+    font-size: 1.1rem;
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#close-controls-btn:hover {
+    background: #ff6f60;
+}
+
+#play-btn, #controls-btn, #play-again-btn {
+    font-family: 'DigitalDisco', monospace;
+    font-size: 1.5rem;
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+#play-btn:hover, #controls-btn:hover {
+    background: #ff6f60;
+}
+
+
